@@ -7,3 +7,4 @@ class Task(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField(null=True)
     date = models.DateTimeField
+    location = models.TextField(null = True)
