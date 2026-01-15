@@ -14,6 +14,19 @@ public class duplicates {
             char c = word.charAt(i);
             String s = String.valueOf(c);
             boolean found = false;
+            for (int j = 0; j < index; j++){
+                if (letters[j].equals(s)){
+                    found =true;
+                    break;
+                }
+            }
+            if (found){
+                times ++;
+            }
+            else{
+                letters[index] =s;
+                index++;
+            }
                 }
             }
             else {
