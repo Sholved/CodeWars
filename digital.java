@@ -13,23 +13,18 @@ public class digital {
     }
     
     public static int root(int number){
-       int sum = 0;
-       //int original = number;
-       while (number>0){
-        sum += number%10;
-        number/=10;
-        // num = String.valueOf(number);
-        // length = num.length(); 
-        //if( num < 10 && lenthof(sum) > 0){
-        // number = sum, sum = 0, sum += number%0
-        //number/10}
-     }
-     number = sum;
-     sum = 0;
-     while (number > 0){
-        sum += number%10;
-        number/=10;     }
-    return sum;
+        int sum = 0;
+        while (number > 10){
+            sum = 0;
+            while (number > 0){
+                sum += number%10;
+                number/=10;
+            }
+            number = sum;
+        }
+
+        return number;
 }
 
 }
+
