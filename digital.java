@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+//digital root adds digits of a number 
+//if the sum of those digits does not produce a single number
+//the addition continues
 
 public class digital {
     static int number;
@@ -22,7 +24,6 @@ public class digital {
             }
             number = sum;
         }
-
         return number;
 }
 

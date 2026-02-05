@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-
+//Each digit in a narcissistic number must be raised to the number of
+//digits in that number and all should be sum, if the result is the 
+//same as the number, then it is narcissistic
 public class narcissistic {
     static int number;
     public static void main(String[] args){
