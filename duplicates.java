@@ -28,11 +28,8 @@ public class duplicates {
                 index++;
             }
                 }
+                System.out.println("Duplicates:" + times);
+                sc.close();
             }
-            else {
-            letters[i] = String.valueOf(c);}
-        }
-        sc.close();
-    }
-}
- 
+            
+        } 
