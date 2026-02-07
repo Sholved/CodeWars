@@ -12,12 +12,8 @@ public class duplicates {
 
         for (int i = 0; i <length; i ++){
             char c = word.charAt(i);
-            int duplicate = 0;
-            c = Character.toLowerCase(c);
-            if (String.valueOf(c) in letters){
-                duplicate += 1;
-                if (duplicate > 0){
-                    times +=1;
+            String s = String.valueOf(c);
+            boolean found = false;
                 }
             }
             else {
