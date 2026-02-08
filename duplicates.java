@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//code to count the number ofr letters that are repeated in a word
 
 public class duplicates {
     public static void main(String[] args) {
