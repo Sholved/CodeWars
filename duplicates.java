@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class duplicates {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("please enter a word");
+        System.out.print("please enter a word: ");
         String word = sc.nextLine().toLowerCase();
         int length = word.length();
         String[] letters = new String[length];
