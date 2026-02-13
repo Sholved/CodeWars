@@ -24,4 +24,6 @@ function flipcolor(){
     document.body.style.backgroundColor = color;
     // change text label
     label.textContent = "Current color: " + color;
+
+    button.addEventListener("click", flipcolor);
 }
