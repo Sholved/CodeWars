@@ -12,7 +12,7 @@ const colors = [
 ]
 //event listeners
 const label = document.getElementById("colorlabel");
-const button = document.getElementById("fipbutton");
+const button = document.getElementById("flipbutton");
 
 // function to pick random colors
 function flipcolor(){
@@ -25,5 +25,5 @@ function flipcolor(){
     // change text label
     label.textContent = "Current color: " + color;
 
-    button.addEventListener("click", flipcolor);
 }
+button.addEventListener("click", flipcolor);
