@@ -8,3 +8,6 @@ class Task(models.Model):
     content = models.TextField(null=True)
     date = models.DateTimeField
     location = models.TextField(null = True)
+    user = models.ForeignKey(user, on_delete=models.CASCADE)
+
+    
