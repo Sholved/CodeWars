@@ -19,10 +19,24 @@ public class Rating {
                 c5+=1;
             }
         }
-        System.out.print("1 appers "+ c1 + "times");
-        System.out.print("2 appers "+ c2 + "times");
-        System.out.print("3 appers "+ c3 + "times");
-        System.out.print("4 appers "+ c4 + "times");
-        System.out.print("5 appers "+ c5 + "times");
+        System.out.println("1 appers "+ c1 + "times");
+        System.out.println("2 appers "+ c2 + "times");
+        System.out.println("3 appers "+ c3 + "times");
+        System.out.println("4 appers "+ c4 + "times");
+        System.out.println("5 appers "+ c5 + "times");
+
+        for (int i=0; i < rates.length; i++){
+            for (int j = 0; j < rates.length; j ++){
+                if (rates[i] > rates[j]){
+                    int swap = rates[i];
+                    rates[i] = rates[j];
+                    rates[j] =swap;
+                }
+            }
+        }
+
+        for (int i = 0; i < rates.length; i ++){
+            System.out.print(rates[i] );
+        }
     }
 }
