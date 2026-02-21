@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args){
         int[] number = new int[100];
         int index = 0;
+        int sum = 0;
 
         for(int i=1; i<100; i++){
             if (i%2 == 1){
@@ -12,10 +13,13 @@ public class Main {
                     break;
                 }
                 number[index] = i;
+                sum += i;
                 System.out.println(number[index]);
                 index ++;
             } 
         }
+        double average = sum/2;
+        System.out.print(average);
     }
 }
 

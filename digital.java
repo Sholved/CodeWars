@@ -7,7 +7,7 @@ public class digital {
     static int number;
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("PLease enter a number ");
+        System.out.println("Please enter a number ");
         number = sc.nextInt();        
         sc.close();
         int result = root(number);
