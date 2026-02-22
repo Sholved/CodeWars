@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args){
-        int[] number = new int[39];
+        int[] number = new int[37];
         int index = 0;
-        int sum = 0;
+        double sum = 0;
         double sum_of_square = 0;
 
         for(int i=1; i<100; i++){
@@ -21,8 +21,8 @@ public class Main {
                 index ++;
             } 
         }
-        double average = sum/2;
-        double variance = (sum_of_square-(sum*sum)/(index +1))/(index);
+        double average = sum/(index);
+        double variance = (sum_of_square-(sum*sum)/(index))/(index-1);
         System.out.println("The standard deviation is " + Math.sqrt(variance));
         System.out.println(index);
         System.out.println(average);
